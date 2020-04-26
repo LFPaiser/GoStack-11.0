@@ -1,0 +1,31 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+    },
+    "extends": [
+        "airbnb-base",
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+    },
+    "plugins": [
+        "@typescript-eslint",
+    ],
+    "rules": {
+      "semi": [1, "never"],
+      "quotes": [2, "single", {"avoidEscape": true}],
+      "jsx-quotes": [2, "prefer-single"],
+      "spaced-comment": [1, "always"],
+      "arrow-spacing": [1, {"before": true, "after": true}],
+      "no-duplicate-imports": 1,
+      "no-trailing-spaces": 1,
+
+    }
+}
