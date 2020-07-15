@@ -39,6 +39,12 @@
       "error",
       "never"
     ],
+    "max-len": [
+      "error",
+      {
+        "code": 90
+      }
+    ],
     "prettier/prettier": "error",
     "import/extensions": [
       "error",
