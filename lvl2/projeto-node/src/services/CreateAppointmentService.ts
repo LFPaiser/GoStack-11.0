@@ -2,6 +2,7 @@ import Appointment from '../models/Appointment'
 import AppointmentsRepository from '../repositories/AppointmentsRepository'
 import { startOfHour } from 'date-fns'
 import { getCustomRepository } from 'typeorm'
+import AppError from '../errors/AppError'
 
 interface Request {
   provider_id: string
@@ -25,7 +26,7 @@ class CreateAppointmentService {
     )
 
     if (availability) {
-      throw Error('There is already another appointment on this date')
+      throw new AppError('There is already another appointment on this date')
     }
 
     const appointment = appointmentsRepository.create({
