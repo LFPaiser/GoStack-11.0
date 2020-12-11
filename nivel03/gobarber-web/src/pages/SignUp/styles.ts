@@ -33,7 +33,7 @@ export const Container = styled.div`
   }
 
   a {
-    color: #ff9000;
+    color: #f4ede8;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -41,7 +41,7 @@ export const Container = styled.div`
     transition: background-color 0.15s;
 
     &:hover {
-      color: ${shade(0.2, '#ff9000')};
+      color: ${shade(0.2, '#f4ede8')};
     }
   }
 
