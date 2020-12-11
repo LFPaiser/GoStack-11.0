@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 import styled from 'styled-components'
 
-export const Container = styled.input`
+export const Container = styled.div`
   background: #232129;
   color: #666360;
   border-radius: 10px;
